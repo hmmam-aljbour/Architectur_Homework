@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Architectur_Homework
 {
     public partial class Form1 : Form
     {
+        private const string connString = "data source = HMMAM\\MSSQLSERVER01;initial catalog = POS; persist security info=True; Integrated Security = SSPI;";
+        private static SqlConnection conn = new SqlConnection(connString);
+        private static SqlCommand cmd = new SqlCommand();
+        private static SqlDataReader reader = null;
+        private static SqlDataAdapter adapter = null;
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +25,7 @@ namespace Architectur_Homework
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
+
             if (txtPrice.Text == "")
             {
                 MessageBox.Show("قم بتعبئة الحقول الفارغة");
@@ -141,6 +148,25 @@ namespace Architectur_Homework
             {
                 MessageBox.Show("قم باختيار الصنف الذي تريد حذفة");
             }
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string Sql = "";
+            Sql += "INSERT INTO [dbo].[Additems] ([itemName],[quantity],[price],[subTotal],[tax],[grandToal]) VALUES (@itemName,@quantity,@price,@subTotal,@tax,@grandToal)";
+            SqlCommand cmd = new SqlCommand(Sql, conn);
+            cmd.CommandType = CommandType.Text;//تستخدم حتى اضيف متغيرات مثل التحت كذالك الامر يحدث في الداتا بيس
+            cmd.Parameters.AddWithValue("@itemName", txtCheckOut.Text);
+            cmd.Parameters.AddWithValue("@quantity", comboBox_Quantity.Text);
+            cmd.Parameters.AddWithValue("@price", txtPrice.Text);
+            cmd.Parameters.AddWithValue("@subTotal", txtPrice.Text);
+            cmd.Parameters.AddWithValue("@tax", txtTax.Text);
+            cmd.Parameters.AddWithValue("@grandToal", txtGrandTotal.Text);
+            cmd.CommandText = Sql;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("تم الحفظ");
         }
     }
 }

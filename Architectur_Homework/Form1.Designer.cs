@@ -54,6 +54,7 @@
             this.btn_Add = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnsave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             this.txtCheckOut.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCheckOut.Location = new System.Drawing.Point(349, 255);
-            this.txtCheckOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.txtCheckOut.Multiline = true;
             this.txtCheckOut.Name = "txtCheckOut";
             this.txtCheckOut.Size = new System.Drawing.Size(151, 312);
@@ -72,7 +73,7 @@
             this.checkBox_Apple.AutoSize = true;
             this.checkBox_Apple.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_Apple.Location = new System.Drawing.Point(11, 69);
-            this.checkBox_Apple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_Apple.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Apple.Name = "checkBox_Apple";
             this.checkBox_Apple.Size = new System.Drawing.Size(92, 31);
             this.checkBox_Apple.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.checkBox_Panana.AutoSize = true;
             this.checkBox_Panana.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_Panana.Location = new System.Drawing.Point(11, 100);
-            this.checkBox_Panana.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_Panana.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Panana.Name = "checkBox_Panana";
             this.checkBox_Panana.Size = new System.Drawing.Size(105, 31);
             this.checkBox_Panana.TabIndex = 3;
@@ -96,7 +97,7 @@
             this.checkBox_Orange.AutoSize = true;
             this.checkBox_Orange.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_Orange.Location = new System.Drawing.Point(11, 38);
-            this.checkBox_Orange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_Orange.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Orange.Name = "checkBox_Orange";
             this.checkBox_Orange.Size = new System.Drawing.Size(104, 31);
             this.checkBox_Orange.TabIndex = 4;
@@ -108,7 +109,7 @@
             this.checkBox_Arabic.AutoSize = true;
             this.checkBox_Arabic.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_Arabic.Location = new System.Drawing.Point(16, 15);
-            this.checkBox_Arabic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_Arabic.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Arabic.Name = "checkBox_Arabic";
             this.checkBox_Arabic.Size = new System.Drawing.Size(99, 31);
             this.checkBox_Arabic.TabIndex = 5;
@@ -125,7 +126,7 @@
             this.comboBox_Quantity.FormattingEnabled = true;
             this.comboBox_Quantity.IntegralHeight = false;
             this.comboBox_Quantity.Location = new System.Drawing.Point(425, 16);
-            this.comboBox_Quantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox_Quantity.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Quantity.Name = "comboBox_Quantity";
             this.comboBox_Quantity.Size = new System.Drawing.Size(160, 28);
             this.comboBox_Quantity.Sorted = true;
@@ -162,7 +163,7 @@
             // 
             this.txtPrice.BackColor = System.Drawing.SystemColors.Info;
             this.txtPrice.Location = new System.Drawing.Point(425, 66);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Multiline = true;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(160, 34);
@@ -210,7 +211,7 @@
             this.lstQty.FormattingEnabled = true;
             this.lstQty.ItemHeight = 30;
             this.lstQty.Location = new System.Drawing.Point(509, 255);
-            this.lstQty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstQty.Margin = new System.Windows.Forms.Padding(4);
             this.lstQty.Name = "lstQty";
             this.lstQty.Size = new System.Drawing.Size(163, 304);
             this.lstQty.TabIndex = 7;
@@ -223,7 +224,7 @@
             this.lstPrice.FormattingEnabled = true;
             this.lstPrice.ItemHeight = 30;
             this.lstPrice.Location = new System.Drawing.Point(681, 257);
-            this.lstPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstPrice.Margin = new System.Windows.Forms.Padding(4);
             this.lstPrice.Name = "lstPrice";
             this.lstPrice.Size = new System.Drawing.Size(163, 304);
             this.lstPrice.TabIndex = 15;
@@ -235,9 +236,9 @@
             this.groupBox1.Controls.Add(this.checkBox_Orange);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 95);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(285, 203);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
@@ -261,7 +262,7 @@
             this.lstSuTotal.FormattingEnabled = true;
             this.lstSuTotal.ItemHeight = 30;
             this.lstSuTotal.Location = new System.Drawing.Point(853, 255);
-            this.lstSuTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstSuTotal.Margin = new System.Windows.Forms.Padding(4);
             this.lstSuTotal.Name = "lstSuTotal";
             this.lstSuTotal.Size = new System.Drawing.Size(163, 304);
             this.lstSuTotal.TabIndex = 18;
@@ -283,7 +284,7 @@
             this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(425, 154);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Multiline = true;
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(160, 34);
@@ -306,7 +307,7 @@
             this.txtTax.Enabled = false;
             this.txtTax.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTax.Location = new System.Drawing.Point(625, 154);
-            this.txtTax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTax.Margin = new System.Windows.Forms.Padding(4);
             this.txtTax.Multiline = true;
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(160, 34);
@@ -328,7 +329,7 @@
             this.txtGrandTotal.Enabled = false;
             this.txtGrandTotal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrandTotal.Location = new System.Drawing.Point(816, 154);
-            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrandTotal.Multiline = true;
             this.txtGrandTotal.Name = "txtGrandTotal";
             this.txtGrandTotal.Size = new System.Drawing.Size(160, 34);
@@ -338,7 +339,7 @@
             // 
             this.btn_Add.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.Location = new System.Drawing.Point(623, 30);
-            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(164, 42);
             this.btn_Add.TabIndex = 0;
@@ -350,7 +351,7 @@
             // 
             this.btnRemove.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Location = new System.Drawing.Point(813, 30);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(164, 42);
             this.btnRemove.TabIndex = 25;
@@ -371,12 +372,25 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Sub Total";
             // 
+            // btnsave
+            // 
+            this.btnsave.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Location = new System.Drawing.Point(63, 337);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(164, 42);
+            this.btnsave.TabIndex = 27;
+            this.btnsave.Text = "save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1109, 582);
+            this.Controls.Add(this.btnsave);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.label9);
@@ -400,7 +414,7 @@
             this.Controls.Add(this.checkBox_Arabic);
             this.Controls.Add(this.txtCheckOut);
             this.Controls.Add(this.btn_Add);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -438,6 +452,7 @@
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnsave;
     }
 }
 
